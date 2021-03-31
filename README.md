@@ -12,3 +12,6 @@ Otherwise previous volume with already initialized DB is used => INITDB env vari
   docker-compose up --build --force-recreate --renew-anon-volumes
   docker system prune -a --volumes
 ```
+
+## How To Lint and Format Code with ESLint in Visual Studio Code
+https://www.digitalocean.com/community/tutorials/linting-and-formatting-with-eslint-in-vs-code
