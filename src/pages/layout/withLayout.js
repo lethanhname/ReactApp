@@ -1,10 +1,10 @@
 import React from 'react';
 import { ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import theme from './theme';
+import theme from '../../core/theme';
 
-import AppFooter from './views/AppFooter';
-import AppAppBar from './views/AppAppBar';
+import AppFooter from './AppFooter';
+import AppAppBar from './AppAppBar';
 
 export default function withLayout(Component) {
   function WithLayout(props) {

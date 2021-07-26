@@ -1,8 +1,8 @@
 import React from 'react';
-import Home from './pages/Home';
+import Home from './pages/home/Home';
 import SignIn from './pages/SignIn';
+import SignUp from './pages/SignUp';
 
-const REACT_APP_BASE_URL = process.env.REACT_APP_BASE_URL;
 export const routes = [
    {
       'path': '/',
@@ -12,6 +12,10 @@ export const routes = [
    {
       'path': '/sign-in',
       'component': SignIn
+   },
+   {
+      'path': '/sign-up',
+      'component': SignUp
    },
    {
       'path':'*',

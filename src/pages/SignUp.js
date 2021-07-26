@@ -1,18 +1,18 @@
-import withRoot from './modules/withRoot';
+import withRoot from '../core/withRoot';
 // --- Post bootstrap -----
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Link from '@material-ui/core/Link';
 import { Field, Form, FormSpy } from 'react-final-form';
-import Typography from './modules/components/Typography';
-import AppFooter from './modules/views/AppFooter';
-import AppAppBar from './modules/views/AppAppBar';
-import AppForm from './modules/views/AppForm';
-import { email, required } from './modules/form/validation';
-import RFTextField from './modules/form/RFTextField';
-import FormButton from './modules/form/FormButton';
-import FormFeedback from './modules/form/FormFeedback';
+import Typography from '../core/components/Typography';
+import AppFooter from './layout/AppFooter';
+import AppAppBar from './layout/AppAppBar';
+import AppForm from './layout/AppForm';
+import { email, required } from '../core/form/validation';
+import RFTextField from '../core/form/RFTextField';
+import FormButton from '../core/form/FormButton';
+import FormFeedback from '../core/form/FormFeedback';
 
 const useStyles = makeStyles((theme) => ({
   form: {
