@@ -58,7 +58,7 @@ function AppAppBar(props) {
               variant="h6"
               underline="none"
               className={classes.rightLink}
-              href="/premium-themes/onepirate/sign-in/"
+              href={ process.env.PUBLIC_URL + "/#/sign-in"}
             >
               {'Sign In'}
             </Link>
