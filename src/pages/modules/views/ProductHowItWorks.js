@@ -5,6 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Button from '../components/Button';
 import Typography from '../components/Typography';
+import GetStarted from './GetStarted'
 
 const styles = (theme) => ({
   root: {
@@ -66,48 +67,7 @@ function ProductHowItWorks(props) {
           How it works
         </Typography>
         <div>
-          <Grid container spacing={5}>
-            <Grid item xs={12} md={4}>
-              <div className={classes.item}>
-                <div className={classes.number}>1.</div>
-                <img
-                  src={process.env.PUBLIC_URL + "/static/themes/onepirate/productHowItWorks1.svg"}
-                  alt="suitcase"
-                  className={classes.image}
-                />
-                <Typography variant="h5" align="center">
-                  Appointment every Wednesday 9am.
-                </Typography>
-              </div>
-            </Grid>
-            <Grid item xs={12} md={4}>
-              <div className={classes.item}>
-                <div className={classes.number}>2.</div>
-                <img
-                  src={process.env.PUBLIC_URL + "/static/themes/onepirate/productHowItWorks2.svg"}
-                  alt="graph"
-                  className={classes.image}
-                />
-                <Typography variant="h5" align="center">
-                  First come, first served. Our offers are in limited quantities, so be quick.
-                </Typography>
-              </div>
-            </Grid>
-            <Grid item xs={12} md={4}>
-              <div className={classes.item}>
-                <div className={classes.number}>3.</div>
-                <img
-                  src={process.env.PUBLIC_URL + "/static/themes/onepirate/productHowItWorks3.svg"}
-                  alt="clock"
-                  className={classes.image}
-                />
-                <Typography variant="h5" align="center">
-                  {'New offers every week. New experiences, new surprises. '}
-                  {'Your Sundays will no longer be alike.'}
-                </Typography>
-              </div>
-            </Grid>
-          </Grid>
+          <GetStarted/>
         </div>
         <Button
           color="secondary"
@@ -115,7 +75,7 @@ function ProductHowItWorks(props) {
           variant="contained"
           className={classes.button}
           component="a"
-          href="/premium-themes/onepirate/sign-up/"
+          href={ process.env.REACT_APP_BASE_URL + "get-started"}
         >
           Get started
         </Button>
